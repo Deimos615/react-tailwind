@@ -9,7 +9,7 @@ import Support from './pages/Support';
 import Recruitment from './pages/Recruitment';
 import Error404 from './pages/Error404';
 import { Routes, Route } from 'react-router-dom';
-
+import { toast, Toaster } from 'react-hot-toast'
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
         </div>
         <Footer logo={logo} />
       </div>
+      <Toaster />
     </div>
   );
 }

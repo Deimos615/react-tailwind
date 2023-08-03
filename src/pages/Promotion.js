@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { formAxios } from '../actions/axios'
+import { toast } from 'react-hot-toast'
 
 const Promotion = () => {
   const { register, handleSubmit } = useForm()
@@ -14,15 +15,13 @@ const Promotion = () => {
       e.file = file
       try {
         const response = await formAxios.post('/promotion', e)
-          alert(response.data.message)
-          console.log(response.data.promotion)
-          // Router.push("/success")
+        toast.success(response.data.message, { position: 'top-right' })
+        console.log(response.data.promotion)
       } catch (err) {
-        alert(err.response.data.message + (err.response.data.error ? ': ' + err.response.data.error : ''))
+        toast.error(err.response.data.message + (err.response.data.error ? '\n ' + err.response.data.error : ''), { position: 'top-right' })
       }
-      console.log(e)
     } else {
-      alert('Please check agreement')
+      toast.error('Please check agreement', { position: 'top-right' })
     }
   }
 
@@ -34,7 +33,7 @@ const Promotion = () => {
       if (validImageTypes.includes(fileType)) {
         setFile(file[0])
       } else {
-        console.log('Imvalid Image.')
+        toast.error('Imvalid Image.', { position: 'top-right' })
       }
     }
   }

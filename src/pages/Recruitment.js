@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from 'react-hook-form'
 import { formAxios } from '../actions/axios'
+import { toast } from 'react-hot-toast'
 
 const Recruitment = () => {
   const { register, handleSubmit } = useForm()
@@ -8,15 +9,13 @@ const Recruitment = () => {
     if (e.agree) {
       try {
         const response = await formAxios.post('/recruitment', e)
-          alert(response.data.message)
-          console.log(response.data.recruitment)
-          // Router.push("/success")
+        toast.success(response.data.message, { position: 'top-right' })
+        console.log(response.data.recruitment)
       } catch (err) {
-        alert(err.response.data.message + (err.response.data.error ? ': ' + err.response.data.error : ''))
+        toast.error(err.response.data.message + (err.response.data.error ? '\n ' + err.response.data.error : ''), { position: 'top-right' })
       }
-      console.log(e)
     } else {
-      alert('Please check agreement.')
+      toast.error('Please check agreement.', { position: 'top-right' })
     }
   }
 
