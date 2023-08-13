@@ -29,7 +29,6 @@
 }
 
 .go_home_btn {
-    display: flex;
     padding: 25px 39px;
     justify-content: center;
     align-items: center;
