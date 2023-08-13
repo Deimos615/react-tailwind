@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .min-50vw {
     min-height: 50vw;
 }
@@ -11,7 +15,7 @@
 }
 
 .error_msg {
-    font-size: 4vw;
+    font-size: 65px;
     font-style: normal;
     font-weight: 800;
     line-height: 128.182%;
@@ -19,19 +23,22 @@
 
 .error_content {
     line-height: 1.5;
-    width: 28vw;
+    width: 452px;
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 21px;
 }
 
 .go_home_btn {
-    border-radius: 10px;
+    display: flex;
+    padding: 25px 39px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
     background: #1B2534;
-    padding: 0.8vw 1.5vw;
-    font-size: 1vw;
+    font-size: 1rem;
     margin-top: 2vw;
     cursor: pointer;
-    width: fit-content;
 }
 
 /* .recruitment {
@@ -53,15 +60,15 @@
 }
 
 .recruitment-title {
-    font-size: 4vw;
+    font-size: 64px;
     font-weight: 800;
     margin-bottom: 8vw;
 }
 
 .recruitment-content {
     background-color: white;
-    padding: 1.8vw 3.5vw;
-    border-radius: 1.5vw;
+    padding: 1.8rem 3.5rem;
+    border-radius: 1rem;
     margin-bottom: 4vw;
     min-height: 24vw;
 }
@@ -75,12 +82,12 @@
 
 .recruitment-description {
     margin-top: 2vw;
-    font-size: 2vw;
+    font-size: 30px;
 }
 
 .description_rec {
     color: #606060;
-    font-size: 1.6vw;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -88,7 +95,7 @@
 
 .input_label {
     color: #606060;
-    font-size: 1.5vw;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
@@ -98,11 +105,11 @@
 .input_field {
     width: 100%;
     border: 1px solid #D3D3D3;
-    margin-top: 2vw;
+    margin-top: 1.25rem;
     padding: 20px;
     border-radius: 10px;
     font-size: 16px;
-    margin-bottom: 2.5vw;
+    margin-bottom: 1.25rem;
 }
 
 .textarea_field {
@@ -116,15 +123,16 @@
 }
 
 .agree_checkbox {
-    width: 1.2vw;
-    height: 1.2vw;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 5px;
     background: #D9D9D9;
+    margin-top: 5px;
 }
 
 .agreement {
     color: #000;
-    font-size: 1vw;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     margin-left: 10px;
@@ -144,7 +152,7 @@
 }
 
 .upload-field {
-    height: 20vw;
+    height: 20rem;
     border: 1px solid lightgrey;
     border-radius: 10px;
     margin-top: 2vw;
@@ -166,7 +174,7 @@
 
 .pay_description {
     color: #000;
-    font-size: 4vw;
+    font-size: 64px;
     margin-bottom: 2vw;
     text-align: center;
     font-weight: 600;
@@ -221,7 +229,7 @@
     min-height: 50vw;
 }
 
-.support_items > svg {
+.support_items>svg {
     position: absolute;
     top: 2vw;
     left: 2vw;
@@ -292,9 +300,53 @@
 }
 
 .main_heading_title {
-    font-size: 3.4vw;
+    font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.2;
+}
+
+@media (max-width: 640px) {
+    .main_heading_title {
+        font-size: 3rem;
+    }
+
+    .main_heading_img {
+        height: 400px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone_image {
+        position: relative !important;
+        height: 380px;
+        width: auto !important;
+        left: 0 !important;
+        bottom: 0 !important;
+    }
+
+    .download_photo {
+        height: unset !important;
+    }
+
+    .recruitment-title {
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 8vw;
+        margin-top: 150px;
+    }
+
+    .recruitment-content {
+        background-color: white;
+        padding: 1.8rem 1rem;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        min-height: 24vw;
+    }
+
+    .error_msg {
+        font-size: 40px !important;
+    }
 }
 
 .main_heading_img {
@@ -326,7 +378,7 @@
 }
 
 .work_item_content {
-    padding-top: 1.5vw;
+    padding-top: 1.5rem;
 }
 
 .work_item_svg {
@@ -352,13 +404,13 @@
 }
 
 .work_item_title {
-    font-size: 3vw;
-    margin-top: 1.5vw;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
     font-weight: 700;
 }
 
 .work_item_description {
-    font-size: 1.5vw;
+    font-size: 0.8rem;
     color: #606060;
 }
 
@@ -398,10 +450,25 @@
 }
 
 .download_title {
-    font-size: 3.2vw;
+    /* font-size: 24px; */
     font-weight: bold;
 }
 
 .download_photo {
     height: 35vw;
+}
+
+.nav_border {
+    border: 1px solid black;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.nav_item_border {
+    border-bottom: 1px solid black;
+}
+
+.error_section {
+    margin-top: 200px;
+    margin-bottom: 200px;
 }

@@ -16,25 +16,25 @@ import android_download from '../assets/Android_download.png'
 const Homepage = () => {
   return (
     <div className="homepage">
-      <div className="main_section">
-        <div className="gap-4 mb-7vw flex">
-          <div className="main_heading w-2/5">
-            <div className="main_heading_title capitalize">
+      <div className="sm:p-vw7">
+        <div className="gap-4 mb-7vw sm:flex">
+          <div className="main_heading w-full sm:w-2/5">
+            <div className="main_heading_title capitalize text-center sm:text-left">
               Swipe Right on Success
             </div>
-            <button className='go_home_btn text-white flex items-center justify-between space-x-3' >
+            <button className='go_home_btn text-white w-full sm:w-fit flex items-center sm:justify-between justify-center space-x-3' >
               Get Started
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none" className=' ml-3'>
                 <path d="M8.53846 1L15 7L8.53846 13M14.1026 7H1" stroke="#29A0F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
           </div>
-          <div className="main_heading_img relative w-3/5">
+          <div className="main_heading_img relative w-full sm:w-3/5">
             <img src={phone} className="phone_image" />
           </div>
         </div>
-        <div className="pl-7 pr-7">
-          <div className="feature_div">
+        <div className="sm:px-7">
+          <div className="feature_div hidden sm:block">
             <div className=" font-sans font-bold feature_title">
               As featured on
             </div>
@@ -60,14 +60,14 @@ const Homepage = () => {
             </div>
           </div>
           <div className="work_div">
-            <div className="text-center font-sans text-4vw font-extrabold capitalize work_title_color">
+            <div className="text-center font-sans text-4vw font-extrabold capitalize work_title_color mx-7vw px-vw7">
               how does Due Diligence <span className="work_color">work</span>?
             </div>
             <div className="work_content flex px-5vw py-vw7 gap-12">
-              <div className="lg:w-2/5 md:w-full h-fit">
+              <div className="sm:w-2/5 w-full h-fit hidden sm:block">
                 <img src={phone_image2} />
               </div>
-              <div className="lg:w-3/5 md:w-full h-fit">
+              <div className="sm:w-3/5 w-full h-fit">
                 <div className="work_item_content">
                   <div className="work_item_svg bg-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
@@ -125,11 +125,11 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className="work_div">
+          <div className="work_div hidden sm:block">
             <div className="text-center font-sans text-4vw font-extrabold capitalize work_title_color">
               Hear from our <span className="work_color">customers</span>
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-14 mt-10 px-3vw">
+            <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-14 mt-10 px-3vw">
               <div className="customer">
                 <div className=" flex items-end justify-between">
                   <div className="customer_title font-sans">
@@ -239,20 +239,14 @@ const Homepage = () => {
           </div>
         </div>
         <div className="download_section">
-          <div className=" grid grid-cols-2 gap-10">
-            <div className="flex justify-center p-5vw">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-10">
+            <div className="flex flex-row sm:flex-col justify-center p-5vw">
               <div className="pt-2vw">
-                <div className="download_title font-sans capitalize">
-                  Get started
+                <div className="download_title font-sans capitalize text-center sm:text-left p-5 sm:p-0 text-4xl sm:text-5xl">
+                  Get started with <span className="text-white">Due Diligenze</span> today
                 </div>
-                <div className="download_title font-sans capitalize">
-                  with <span className="text-white">Due Diligenze</span>
-                </div>
-                <div className="download_title font-sans capitalize">
-                  today
-                </div>
-                <div className='go_home_btn w-fit text-white flex items-center justify-between' >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1.8vw" height="1vw" viewBox="0 0 29 17" fill="none" className="mr-3">
+                <div className='go_home_btn w-fit text-white hidden sm:flex items-center sm:justify-between justify-center'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.8rem" height="1rem" viewBox="0 0 29 17" fill="none" className="mr-3">
                     <path d="M21.3009 5.1229L23.6759 0.765884C23.7395 0.648926 23.7569 0.510041 23.7242 0.379554C23.6915 0.249066 23.6114 0.137575 23.5014 0.069425C23.447 0.035634 23.3869 0.013602 23.3244 0.00460458C23.262 -0.00439281 23.1984 -0.000176755 23.1375 0.0170092C23.0766 0.0341952 23.0195 0.0640093 22.9696 0.104724C22.9196 0.145439 22.8778 0.196245 22.8465 0.2542L20.4419 4.66747C18.6061 3.77913 16.5398 3.28462 14.3175 3.28462C12.0952 3.28462 10.0289 3.77973 8.19299 4.66747L5.78839 0.2542C5.72432 0.137341 5.61904 0.0522233 5.49571 0.0175713C5.37238 -0.0170807 5.2411 0.0015715 5.13076 0.069425C5.02041 0.137278 4.94004 0.248775 4.90732 0.379386C4.8746 0.509997 4.89221 0.649025 4.95628 0.765884L7.32566 5.1229C3.23224 7.47048 0.457993 11.8607 0 17H28.6316C28.1736 11.8607 25.3993 7.47048 21.3009 5.1229ZM7.74227 12.7419C7.50492 12.7419 7.2729 12.6674 7.07555 12.5277C6.8782 12.3881 6.72438 12.1896 6.63355 11.9573C6.54272 11.7251 6.51896 11.4696 6.56526 11.223C6.61157 10.9765 6.72586 10.75 6.89369 10.5723C7.06153 10.3946 7.27536 10.2735 7.50815 10.2245C7.74094 10.1754 7.98223 10.2006 8.20152 10.2968C8.4208 10.393 8.60822 10.5559 8.74009 10.7649C8.87195 10.9739 8.94234 11.2196 8.94234 11.471C8.94219 11.808 8.8157 12.1312 8.59068 12.3695C8.36566 12.6078 8.0605 12.7417 7.74227 12.7419ZM20.8837 12.7419C20.6466 12.7408 20.4151 12.6654 20.2184 12.5251C20.0217 12.3848 19.8687 12.186 19.7786 11.9537C19.6885 11.7213 19.6655 11.466 19.7124 11.2198C19.7592 10.9736 19.8739 10.7476 20.042 10.5704C20.21 10.3932 20.4238 10.2727 20.6565 10.2241C20.8891 10.1755 21.1302 10.201 21.3491 10.2973C21.5681 10.3937 21.7553 10.5566 21.8869 10.7654C22.0186 10.9743 22.0888 11.2198 22.0888 11.471C22.0887 11.6381 22.0576 11.8036 21.997 11.9579C21.9365 12.1123 21.8479 12.2525 21.7362 12.3705C21.6245 12.4886 21.4919 12.5821 21.346 12.6458C21.2001 12.7096 21.0438 12.7422 20.886 12.7419H20.8837Z" fill="white" />
                   </svg>
                   Download For Android
@@ -260,7 +254,13 @@ const Homepage = () => {
               </div>
             </div>
             <div className="flex justify-center items-center pt-4vw pb-3vw">
-              <img src={android_download} className="download_photo"/>
+              <img src={android_download} className="download_photo" />
+            </div>
+            <div className='go_home_btn w-fit text-white flex sm:hidden items-center sm:justify-between justify-center m-auto sm:m-none mb-7'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.8rem" height="1rem" viewBox="0 0 29 17" fill="none" className="mr-3">
+                <path d="M21.3009 5.1229L23.6759 0.765884C23.7395 0.648926 23.7569 0.510041 23.7242 0.379554C23.6915 0.249066 23.6114 0.137575 23.5014 0.069425C23.447 0.035634 23.3869 0.013602 23.3244 0.00460458C23.262 -0.00439281 23.1984 -0.000176755 23.1375 0.0170092C23.0766 0.0341952 23.0195 0.0640093 22.9696 0.104724C22.9196 0.145439 22.8778 0.196245 22.8465 0.2542L20.4419 4.66747C18.6061 3.77913 16.5398 3.28462 14.3175 3.28462C12.0952 3.28462 10.0289 3.77973 8.19299 4.66747L5.78839 0.2542C5.72432 0.137341 5.61904 0.0522233 5.49571 0.0175713C5.37238 -0.0170807 5.2411 0.0015715 5.13076 0.069425C5.02041 0.137278 4.94004 0.248775 4.90732 0.379386C4.8746 0.509997 4.89221 0.649025 4.95628 0.765884L7.32566 5.1229C3.23224 7.47048 0.457993 11.8607 0 17H28.6316C28.1736 11.8607 25.3993 7.47048 21.3009 5.1229ZM7.74227 12.7419C7.50492 12.7419 7.2729 12.6674 7.07555 12.5277C6.8782 12.3881 6.72438 12.1896 6.63355 11.9573C6.54272 11.7251 6.51896 11.4696 6.56526 11.223C6.61157 10.9765 6.72586 10.75 6.89369 10.5723C7.06153 10.3946 7.27536 10.2735 7.50815 10.2245C7.74094 10.1754 7.98223 10.2006 8.20152 10.2968C8.4208 10.393 8.60822 10.5559 8.74009 10.7649C8.87195 10.9739 8.94234 11.2196 8.94234 11.471C8.94219 11.808 8.8157 12.1312 8.59068 12.3695C8.36566 12.6078 8.0605 12.7417 7.74227 12.7419ZM20.8837 12.7419C20.6466 12.7408 20.4151 12.6654 20.2184 12.5251C20.0217 12.3848 19.8687 12.186 19.7786 11.9537C19.6885 11.7213 19.6655 11.466 19.7124 11.2198C19.7592 10.9736 19.8739 10.7476 20.042 10.5704C20.21 10.3932 20.4238 10.2727 20.6565 10.2241C20.8891 10.1755 21.1302 10.201 21.3491 10.2973C21.5681 10.3937 21.7553 10.5566 21.8869 10.7654C22.0186 10.9743 22.0888 11.2198 22.0888 11.471C22.0887 11.6381 22.0576 11.8036 21.997 11.9579C21.9365 12.1123 21.8479 12.2525 21.7362 12.3705C21.6245 12.4886 21.4919 12.5821 21.346 12.6458C21.2001 12.7096 21.0438 12.7422 20.886 12.7419H20.8837Z" fill="white" />
+              </svg>
+              Download For Android
             </div>
           </div>
         </div>
