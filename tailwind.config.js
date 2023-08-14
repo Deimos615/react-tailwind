@@ -34,6 +34,7 @@ module.exports = {
         '1.25vw': '1.25rem',
         '1.125vw': '1.125rem',
         '40': '40px',
+        '32': '32px',
       },
       padding: {
         'vw7': '7vw',

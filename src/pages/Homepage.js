@@ -60,10 +60,10 @@ const Homepage = () => {
             </div>
           </div>
           <div className="work_div">
-            <div className="text-center font-sans text-40 sm:text-4vw font-extrabold capitalize work_title_color mx-7vw px-vw7">
+            <div className="text-center font-sans text-40 sm:text-4vw font-extrabold capitalize work_title_color mx-7vw">
               how does Due Diligence <span className="work_color">work</span>?
             </div>
-            <div className="work_content flex px-5vw py-vw7 gap-12">
+            <div className="work_content flex px-5 sm:px-5vw py-vw7 gap-12">
               <div className="sm:w-2/5 w-full h-fit hidden sm:block">
                 <img src={phone_image2} />
               </div>
@@ -78,7 +78,7 @@ const Homepage = () => {
                     Home
                   </div>
                   <div className="work_item_description">
-                    Home you can find different profiles from anywhere in the world, and filter between different categories: Developers, Designers, Entrepreneurs... or by skills to find the profile that best fit with you.
+                    Home you can find different profiles from anywhere in the world, and filter between different categories: Developers, Designers, Entrepreneurs...&nbsp;or by skills to find the profile that best fit with you.
                   </div>
                 </div>
                 <div className="work_item_content">

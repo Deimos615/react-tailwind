@@ -100,7 +100,7 @@ const Promotion = () => {
             </div>
             <div>
               <div className="recruitment-contact">
-                <div className="form-group font-sans">
+                <div className="form-group font-sans pt-5">
                   <form onSubmit={handleSubmit(onSubmit)} action='#'>
                     <div>
                       <label htmlFor="fullName" className="input_label">Full Name *</label>

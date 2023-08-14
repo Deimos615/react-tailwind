@@ -42,7 +42,7 @@ const Recruitment = () => {
               <div className="recruitment-description font-sans font-extrabold">
                 Finding the ideal profiles for your business
               </div>
-              <div className="description_rec font-sans">
+              <div className="description_rec font-sans pr-3">
                 With Due Diligenze, you can access a wide database of highly qualified professionals with various profiles. we work with the human resources department to fully understand the requirements and skills needed for the open position.
               </div>
             </div>
@@ -60,7 +60,7 @@ const Recruitment = () => {
           </div>
           <div>
             <div className="recruitment-contact">
-              <div className="form-group font-sans">
+              <div className="form-group font-sans pt-5">
                 <form onSubmit={handleSubmit(onSubmit)} action="#">
                   <div>
                     <label htmlFor="fullName" className="input_label">Full Name *</label>
