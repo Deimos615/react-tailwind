@@ -5,7 +5,7 @@ const Footer = ({ logo }) => {
   return (
     <div id="contact" className=" bg-black py-10 px-4 sm:px-vw7">
       <div className="flex flex-row flex-wrap items-center justify-between mb-5vw">
-        <div className="pl-7">
+        <div className="pl-7 w-full sm:w-fit">
           <a href="/" className=" items-center space-x-5 w-1/2 pl-5 mb-2 lg:visible lg:w-auto lg:pl-0 lg:mb-0 hidden sm:flex">
             <img width="59px" height="60px" src={logo} alt="logo" className=" rounded-lg" />
             <span className=" font-sans font-bold text-white text-2.5vw">Due Diligenze</span>

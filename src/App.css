@@ -310,7 +310,7 @@
     }
 
     .main_heading_img {
-        height: 400px !important;
+        height: 760px !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -318,7 +318,7 @@
 
     .phone_image {
         position: relative !important;
-        height: 380px;
+        height: 660px;
         width: auto !important;
         left: 0 !important;
         bottom: 0 !important;
@@ -345,6 +345,10 @@
 
     .error_msg {
         font-size: 40px !important;
+    }
+
+    .download_section {
+        border-radius: 0px !important;
     }
 }
 
@@ -403,13 +407,13 @@
 }
 
 .work_item_title {
-    font-size: 1.5rem;
+    font-size: 35px;
     margin-top: 0.5rem;
     font-weight: 700;
 }
 
 .work_item_description {
-    font-size: 0.8rem;
+    font-size: 22px;
     color: #606060;
 }
 
