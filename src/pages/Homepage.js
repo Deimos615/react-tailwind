@@ -242,7 +242,7 @@ const Homepage = () => {
           <div className=" grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-10">
             <div className="flex flex-row sm:flex-col justify-center p-5vw">
               <div className="pt-2vw">
-                <div className="download_title font-sans capitalize text-center sm:text-left p-5 sm:p-0 text-4xl sm:text-5xl">
+                <div className="download_title font-sans capitalize py-5 px-10 sm:p-0 sm:text-5xl">
                   Get started with <span className="text-white">Due Diligenze</span> today
                 </div>
                 <div className='go_home_btn w-fit text-white hidden sm:flex items-center sm:justify-between justify-center'>
